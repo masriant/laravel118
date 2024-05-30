@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', fn () => view('home'))->name('home');
 
 Route::get('/', fn () => view('home'));
+Route::get('/blog', fn () => view('blog'));
 Route::get('/about', fn () => view('about'));
 Route::get('/contact', fn () => view('contact'));
 Route::get('/gallery', fn () => view('gallery'));
