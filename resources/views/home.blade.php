@@ -1,6 +1,4 @@
 <x-app-layout>
-    <x-slot:heading>
-        Home
-    </x-slot:heading>
+    <x-slot name="heading">Home</x-slot>
     Home
 </x-app-layout>
