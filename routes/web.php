@@ -24,5 +24,5 @@ Route::get('users', function () {
         ['id' => 2, 'name' => 'Anto'],
     ];
 
-    return $users;
+    return view('users.index', compact('users'));
 });
