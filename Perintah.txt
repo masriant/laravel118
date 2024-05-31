@@ -1,6 +1,16 @@
+php artisan list make
 php artisan make:controller HomeController -i
 php artisan make:controller AboutController
 php artisan make:controller ContactController
 php artisan make:controller GalleryController -i
 php artisan make:controller BlogController -i
 
+php artisan make:migration 'create articles table'
+php artisan migrate
+php artisan migrate:rollback
+php artisan migrate:fresh
+php artisan make:migration 'add column meta_title to articles table'
+
+
+alias migrate
+migrate='php artisan migrate'
