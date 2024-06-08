@@ -17,3 +17,5 @@ migrate='php artisan migrate'
 
 php artisan make:controller UserController
 php artisan make:model Person -m
+
+php artisan make:model articles
