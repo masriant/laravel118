@@ -12,6 +12,12 @@ class UserController extends Controller
     public function index()
     {
         // return \App\Models\User::get();
+        // return DB::table('articles')
+        //     ->select('title', 'slug', 'id')
+        //     ->get();
+
+
+
         $users = User::query()->latest()->get();
 
         return view('users.index', [
