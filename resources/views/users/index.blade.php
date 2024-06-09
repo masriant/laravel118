@@ -9,7 +9,7 @@
             
         </x-section-title>
         <div class="mt-4 sm:ml-16 sm:mt-0 sm:flex-none">
-            <x-button as="a" href="/users/create">
+            <x-button class="bg-red-500" as="a" href="/users/create">
                 Add user
             </x-button>
         </div>

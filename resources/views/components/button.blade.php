@@ -8,11 +8,11 @@
    @endphp
 
    @if ($as == 'button')
-        <button type="{{ $type }}" {{ $attributes }} class="{{ $classes }}">
+        <button type="{{ $type }}" {{ $attributes->merge(['class' => $classes]) }}>
             {{ $slot }}
         </button>
    @else
-        <a {{ $attributes }} class="{{ $classes }}">
+        <a {{ $attributes->merge(['class' => $classes]) }}>
             {{ $slot }}
         </a>
     @endif
